@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-color: #ffbebe;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+button{
+    margin-bottom: 15px;
+    padding: 5px;
+    color: black;
+    background-color: rgb(147, 147, 255);
+    border-radius: 5px;
+}
+
+#results span{
+    margin: 15px 0;
+    background-color: #ef7d7d;
+    padding: 5px 10px;
+    border:2px solid black;
+    border-radius: 5px;
+}

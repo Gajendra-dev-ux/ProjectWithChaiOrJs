@@ -1,0 +1,25 @@
+.center{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#banner{
+    font-family: cursive;
+    font-size: xx-large;
+}
+
+#clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border-radius: 15px;
+    background-color: orange;
+    height:100px ;
+    width: 500px;
+    font-size: xxx-large;
+}
