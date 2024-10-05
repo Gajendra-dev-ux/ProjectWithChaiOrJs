@@ -1,4 +1,4 @@
-body{
+/* body{
     background: linear-gradient(45deg, #8378ff, #ff7777);
 }
 .container{
@@ -28,4 +28,59 @@ body{
     background: linear-gradient(45deg, #ff7979, #e700ff);
     transform: scale(1.05);
 }
+ */
+ body {
+    background: linear-gradient(45deg, #8378ff, #ff7777);
+    font-family: Arial, sans-serif; /* Adding a default font for better readability */
+}
 
+.container {
+    margin: 50px 200px;
+    height: 80vh; /* Maintains height, consider using min-height for flexibility */
+    text-align: center;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Simplified column definition */
+    gap: 50px;
+}
+
+.heading {
+    margin: 30px 0;
+    text-align: center;
+    color: #fa0000; /* Improved visibility against gradient */
+}
+
+.container div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    padding: 20px; /* Adding some padding for better layout */
+    background: linear-gradient(45deg, #ff8c8c, #fea8ff);
+}
+
+.container div:hover {
+    background: linear-gradient(45deg, #ff7979, #e700ff);
+    transform: scale(1.05);
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1200px) {
+    .container {
+        margin: 50px 100px;
+        grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        margin: 50px 100px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Stack items on smaller screens */
+    }
+}

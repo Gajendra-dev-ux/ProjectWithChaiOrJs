@@ -1,4 +1,4 @@
-*{
+/* *{
     margin: 5px;
 }
 
@@ -12,7 +12,6 @@
 #guess{
     text-align: center;
     font-size: 40px;
-    /* margin-bottom: 15px; */
 }
 .guessField{
     padding: 10px;
@@ -49,7 +48,117 @@
 }
 #subt{
     cursor: pointer;
-}
+} */
 /* .lowOrHi{
     color: rgb(42, 165, 77);
 } */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #212121;
+    color: #fff;
+    font-family: Arial, sans-serif; /* Added a font for consistency */
+}
+
+#wrapper {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; /* Center-align text */
+}
+
+h1 {
+    font-size: 2.5rem; /* Increased font size for the title */
+    margin-bottom: 10px; /* Space below the title */
+}
+
+p {
+    font-size: 1.2rem; /* Adjusted font size for instructions */
+    margin-bottom: 20px; /* Space below paragraphs */
+}
+
+#guess {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.guessField {
+    padding: 10px;
+    font-size: 20px;
+    border: 5px solid grey;
+    border-radius: 10px;
+    margin: 15px 0;
+    width: 80%; /* Responsive width */
+    max-width: 300px; /* Max width for larger screens */
+    background-color: #333; /* Dark background for input */
+    color: #fff; /* White text for input */
+}
+
+.guessSubmit {
+    padding: 10px;
+    font-size: 20px;
+    background-color: rgb(150, 150, 150);
+    width: 150px;
+    border-radius: 5px;
+    border: none; /* Remove default border */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Transition for hover effect */
+}
+
+.guessSubmit:hover {
+    background-color: rgb(100, 100, 100); /* Darker on hover */
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resultParas {
+    margin-top: 20px; /* Space above results */
+}
+
+.guesses {
+    padding: 5px;
+    background-color: rgb(74, 74, 74);
+    border-radius: 5px; /* Rounded corners for guesses */
+    max-width: 300px; /* Limit width for guesses display */
+    word-wrap: break-word; /* Handle long text */
+}
+
+.lowOrHi {
+    font-size: 1.2rem; /* Increased font size for hints */
+    margin-top: 10px; /* Space above hints */
+}
+
+.button{
+    cursor: pointer;
+    margin: 15px;
+    text-align: center;
+    border:grey 2px solid;
+}
+.button:hover{
+    color: rgb(128, 128, 128);
+}
+
+@media (max-width: 600px) {
+    #guess {
+        font-size: 30px; /* Adjust font size for smaller screens */
+    }
+
+    .guessField {
+        font-size: 18px; /* Smaller input font */
+    }
+
+    .guessSubmit {
+        font-size: 18px; /* Smaller button font */
+    }
+}

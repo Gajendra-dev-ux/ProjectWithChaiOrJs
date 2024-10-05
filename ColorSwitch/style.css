@@ -1,39 +1,96 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-  
-.canvas{
-    max-width: 1100px;
-    margin: auto;
-    overflow: auto;
-    padding: 0 2rem;
-    text-align: center;
-}
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
 
-h1,h2{
-    margin: 70px 0;
-}
+ body {
+     font-family: Arial, sans-serif; /* Added a font for better readability */
+     background-color: #f0f0f0; /* Light background for contrast */
+ }
 
-.button{
-    padding: 50px;
-    margin: 10px;
-    border: 1px,black,solid;
-}
+ .canvas {
+     max-width: 1100px;
+     margin: 120px 250px;
+     padding: 1rem; /* Increased padding for better spacing */
+     text-align: center;
+     background-color: #fff; /* White background for canvas */
+     border-radius: 10px; /* Rounded corners for canvas */
+     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+ }
 
-#grey{
-    background-color: grey;
-}
-#white{
-    background-color: white;
-}
-#blue{
-    background-color: blue;
-}
-#yellow{
-    background-color: yellow;
-}
-#purple{
-    background-color: purple;
-}
+ h1, h2 {
+     margin: 40px 0; /* Adjusted margins for better spacing */
+     color: #333; /* Dark color for better visibility */
+ }
+
+ .button {
+     display: inline-block; /* Changed to inline-block for better layout */
+     width: 80px; /* Fixed width for buttons */
+     height: 80px; /* Fixed height for buttons */
+     margin: 10px; /* Margin for spacing */
+     border: none; /* Remove default border */
+     border-radius: 5px; /* Rounded corners for buttons */
+     cursor: pointer; /* Pointer cursor for buttons */
+     transition: transform 0.2s; /* Smooth scaling effect on hover */
+ }
+
+ /* Color Styles */
+ #grey {
+     background-color: grey;
+     border: black solid 2px;
+ }
+ #white {
+     background-color: white;
+     border: black solid 2px;
+ }
+ #blue {
+     background-color: blue;
+     border: black solid 2px;
+ }
+ #yellow {
+     background-color: yellow;
+     border: black solid 2px;
+ }
+ #purple {
+     background-color: purple;
+     border: black solid 2px;
+ }
+
+ /* Hover Effect for Buttons */
+ .button:hover {
+     transform: scale(1.1); /* Scale up on hover */
+ }
+
+ /* Responsive Styles */
+ @media (max-width: 900px) {
+
+    .canvas {
+        margin: 100px;
+    }
+
+     .button {
+         width: 60px; /* Smaller buttons on smaller screens */
+         height: 60px; /* Adjust height accordingly */
+     }
+
+     h1, h2 {
+         margin: 30px 0; /* Reduced margins for smaller screens */
+     }
+ }
+
+ @media (max-width: 480px) {
+
+    .canvas {
+        margin:100px 50px;
+    }
+
+     .button {
+         width: 50px; /* Further reduced button size */
+         height: 50px; /* Further reduced height */
+     }
+
+     h1, h2 {
+         font-size: 1.2rem; /* Smaller font size for headings */
+     }
+ }
